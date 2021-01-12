@@ -32,6 +32,7 @@
   add_action('wp_head', 'setup_googletag');
 
   // Insert ads after second paragraph of single post content.
+  // This means add will show only when you view it in full page mode
   function prefix_insert_post_ads( $content ) {
     $ad_code = '<div id="banner-ad" style="width: 300px; height: 250px;">
                 <script>
